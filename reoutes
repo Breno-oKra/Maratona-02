@@ -1,0 +1,35 @@
+const express = require("express")
+const routes = express.Router()
+
+const dirNami = __dirname + "/views"
+
+
+//request, response
+//ativado quando entrarmos em /, ou seja o inicio
+routes.get('/',(request,response) => {
+
+    // com send  conseguimos mandar uma resposta que é includa no body da pagina
+    return response.sendFile(dirNami + "/index.html")
+})
+routes.get('/index',(request,response) => {
+
+    // com send  conseguimos mandar uma resposta que é includa no body da pagina
+    return response.redirect("/")
+})
+routes.get('/job/edit',(request,response) => {
+
+    // com send  conseguimos mandar uma resposta que é includa no body da pagina
+    return response.sendFile(dirNami + "/job-edit.html")
+})
+routes.get('/job',(request,response) => {
+
+    // com send  conseguimos mandar uma resposta que é includa no body da pagina
+    return response.sendFile(dirNami + "/job.html")
+})
+routes.get('/profile',(request,response) => {
+
+    // com send  conseguimos mandar uma resposta que é includa no body da pagina
+    return response.sendFile(dirNami + "/profile.html")
+})
+
+module.exports = routes
