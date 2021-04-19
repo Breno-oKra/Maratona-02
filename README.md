@@ -21,6 +21,8 @@
   <img alt="dev.finances" src=".github/jobscalc.png" width="100%">
 </p>
 
+## Projeto Desenvolvido no Evento Discovery 02
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
